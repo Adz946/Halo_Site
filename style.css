@@ -76,7 +76,7 @@ img {
 /* For mobiles: */
 [class*="col-"] { width: 100%; }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 630px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
