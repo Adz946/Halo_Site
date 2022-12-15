@@ -55,6 +55,11 @@ html { font-family: "Lucida Sans", sans-serif; }
     padding: 15px;
 }
 
+img {
+    width: 10%;
+    height: auto;
+}
+
 /* For mobiles: */
 [class*="col-"] { width: 100%; }
 
