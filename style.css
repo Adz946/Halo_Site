@@ -1,5 +1,9 @@
 * { box-sizing: border-box; }
 
+html {
+    background-color: beige;
+}
+
 .row::after, .row::before {
     content: "";
     clear: both;
@@ -10,25 +14,30 @@
 
 html { font-family: "Lucida Sans", sans-serif; }
 
-.header {
-    background-color: darkgreen;
+html :is(h2, h3, h4, h5, h6):hover {
+    font-size: 150%;
+    color: goldenrod;
+}
+
+h1:hover {
+    font-size: 300%;
+    color: white;
+}
+
+header {
     color: silver;
+    text-align: center;
+    background-color: darkgreen;
     box-shadow: 0 1px 3px black, 0 1px 2px black;
 }
 
-#stick {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-}
-
-.menu ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.menu li {
+li {
     padding: 10px;
     margin-bottom: 5px;
     background-color :green;
@@ -36,21 +45,17 @@ html { font-family: "Lucida Sans", sans-serif; }
     box-shadow: 0 1px 3px black, 0 1px 2px black;
 }
 
-.menu li:hover { 
+li:hover { 
     background-color: yellowgreen; 
     color: white;
 }
 
-.aside {
-    background-color: turquoise;
+aside {
     padding: 15px;
-    color: silver;
-    text-align: center;
     font-size: 14px;
-    box-shadow: 0 1px 3px black, 0 1px 2px black;
 }
 
-.footer {
+footer {
     background-color: goldenrod;
     color: silver;
     text-align: right;
@@ -59,10 +64,23 @@ html { font-family: "Lucida Sans", sans-serif; }
     padding: 15px;
 }
 
-img {
-    width: 15%;
-    height: auto;
+iframe {
+    display: none;
+}
+
+[id*="img-"] {
+    width: 20%;
     padding: 1%;
+    background-color: silver;
+    box-shadow: 0 1px 3px black, 0 1px 2px black;
+}
+
+[id*="img-"]:hover {
+    background-color: white;
+}
+
+#box_art {
+    text-align: center;
     box-shadow: 0 1px 3px black, 0 1px 2px black;
 }
 
@@ -91,7 +109,7 @@ img {
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
     
-    #stick { position: sticky; }
+    nav { position: sticky; top: 0; }
   }
 
 @media screen and (min-width: 768px) {
@@ -109,5 +127,5 @@ img {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    #stick { position: sticky; }
+    nav { position: sticky; top: 0; }
 }
