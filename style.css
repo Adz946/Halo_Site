@@ -1,10 +1,6 @@
 * { box-sizing: border-box; }
 
-html {
-    background-color: beige;
-}
-
-.row::after, .row::before {
+.content::after, .content::before {
     content: "";
     clear: both;
     display: block;
@@ -12,40 +8,26 @@ html {
 
 [class*="col-"] { float: left; padding: 1%; }
 
-html { font-family: "Lucida Sans", sans-serif; }
-
-html :is(h2, h3, h4, h5, h6):hover {
-    font-size: 150%;
-    color: goldenrod;
-}
-
-h1:hover {
-    font-size: 300%;
-    color: white;
-}
+html { 
+    font-family: "Lucida Sans", sans-serif;
+    background-color: beige;
+ }
 
 header {
     color: silver;
-    text-align: center;
     background-color: darkgreen;
     box-shadow: 0 1px 3px black, 0 1px 2px black;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    padding: 10px;
-    margin-bottom: 5px;
+#link {
+    display: block;
+    padding: 5%;
     background-color :green;
     color: silver;
     box-shadow: 0 1px 3px black, 0 1px 2px black;
 }
 
-li:hover { 
+#link:hover { 
     background-color: yellowgreen; 
     color: white;
 }
@@ -56,7 +38,7 @@ aside {
 }
 
 footer {
-    background-color: goldenrod;
+    background-color: green;
     color: silver;
     text-align: right;
     font-size: 15px;
