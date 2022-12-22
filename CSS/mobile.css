@@ -36,12 +36,14 @@ header {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 nav a {
     padding: 2%;
     display: block;
+    flex-basis: 25%;
     color: silver;
     background-color: green;
 }
