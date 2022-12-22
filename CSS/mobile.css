@@ -2,4 +2,100 @@
     For MOBILE Devices
 */
 
-[class*="col-"] { width: 100%; }
+/* ---------------------------------------------------------------------- */
+
+* { box-sizing: border-box; }
+
+[class*="col-"] { 
+    float: left; 
+    padding: 1%; 
+    width: 100%; 
+}
+
+html { 
+    background-color: beige;
+    font-family: "Lucida Sans", sans-serif;
+ }
+
+header {
+    background-color: darkgreen;
+    box-shadow: 2px 1px 3px black
+}
+
+.content {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.content::after, .content::before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    padding: 2%;
+    display: block;
+    color: silver;
+    background-color: green;
+}
+
+nav a:hover { 
+    color: white;
+    background-color: yellowgreen; 
+}
+
+aside { padding: 5%; }
+
+footer {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    color: darkgreen;
+    background-color: silver;
+    box-shadow: 2px 1px 3px black inset;
+}
+
+/* ---------------------------------------------------------------------- */
+
+#logo {
+    width: 15%;
+    height: auto;
+    box-shadow: none;
+}
+
+[id*="img-"] {
+    width: 20%;
+    padding: 1%;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: silver;
+}
+
+[id*="img-"]:hover {
+    background-color: green;
+}
+
+#box_art {
+    padding: 1%;
+    text-align: center;
+    box-shadow: 0 1px 3px black, 0 1px 2px black;
+}
+
+iframe {
+    padding: 5%;
+    display: none;
+}
+
+#trailers {
+    padding: 5%;
+}
+
