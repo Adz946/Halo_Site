@@ -35,23 +35,30 @@ header {
 }
 
 nav {
+    top: 0;
     display: flex;
     flex-wrap: wrap;
+    position: sticky;
+    background-color: silver;
     justify-content: space-evenly;
 }
 
 nav a {
     padding: 2%;
-    margin: 0 2% 2% 0;
+    margin: 2%;
     display: block;
-    flex-basis: 25%;
     color: silver;
+    position: sticky;
     background-color: green;
+    text-align: center;
+    box-shadow: 2px 1px 3px black;
 }
 
 nav a:hover { 
-    color: white;
+    color: black;
+    font-weight: bolder;
     background-color: yellowgreen; 
+    box-shadow: 2px 1px 3px black inset;
 }
 
 aside { padding: 5%; }
@@ -69,13 +76,13 @@ footer {
 /* ---------------------------------------------------------------------- */
 
 #logo {
-    width: 15%;
+    width: 50%;
     height: auto;
     box-shadow: none;
 }
 
 [id*="img-"] {
-    width: 20%;
+    width: 30%;
     padding: 1%;
     margin-top: 5%;
     margin-left: 1%;
